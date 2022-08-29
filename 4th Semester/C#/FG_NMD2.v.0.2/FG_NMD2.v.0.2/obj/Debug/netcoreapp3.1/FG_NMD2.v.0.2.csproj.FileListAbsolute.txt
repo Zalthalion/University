@@ -1,0 +1,11 @@
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\bin\Debug\netcoreapp3.1\FG_NMD2.v.0.2.exe
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\bin\Debug\netcoreapp3.1\FG_NMD2.v.0.2.deps.json
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\bin\Debug\netcoreapp3.1\FG_NMD2.v.0.2.runtimeconfig.json
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\bin\Debug\netcoreapp3.1\FG_NMD2.v.0.2.runtimeconfig.dev.json
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\bin\Debug\netcoreapp3.1\FG_NMD2.v.0.2.dll
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\bin\Debug\netcoreapp3.1\FG_NMD2.v.0.2.pdb
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\obj\Debug\netcoreapp3.1\FG_NMD2.v.0.2.csprojAssemblyReference.cache
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\obj\Debug\netcoreapp3.1\FG_NMD2.v.0.2.AssemblyInfoInputs.cache
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\obj\Debug\netcoreapp3.1\FG_NMD2.v.0.2.AssemblyInfo.cs
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\obj\Debug\netcoreapp3.1\FG_NMD2.v.0.2.dll
+D:\Code\FG_NMD2.v.0.2\FG_NMD2.v.0.2\obj\Debug\netcoreapp3.1\FG_NMD2.v.0.2.pdb

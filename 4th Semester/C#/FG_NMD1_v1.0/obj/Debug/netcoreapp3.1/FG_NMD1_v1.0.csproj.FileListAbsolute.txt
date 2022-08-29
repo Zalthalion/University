@@ -1,0 +1,11 @@
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\bin\Debug\netcoreapp3.1\FG_NMD1_v1.0.exe
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\bin\Debug\netcoreapp3.1\FG_NMD1_v1.0.deps.json
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\bin\Debug\netcoreapp3.1\FG_NMD1_v1.0.runtimeconfig.json
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\bin\Debug\netcoreapp3.1\FG_NMD1_v1.0.runtimeconfig.dev.json
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\bin\Debug\netcoreapp3.1\FG_NMD1_v1.0.dll
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\bin\Debug\netcoreapp3.1\FG_NMD1_v1.0.pdb
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\obj\Debug\netcoreapp3.1\FG_NMD1_v1.0.csprojAssemblyReference.cache
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\obj\Debug\netcoreapp3.1\FG_NMD1_v1.0.AssemblyInfoInputs.cache
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\obj\Debug\netcoreapp3.1\FG_NMD1_v1.0.AssemblyInfo.cs
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\obj\Debug\netcoreapp3.1\FG_NMD1_v1.0.dll
+D:\Code\FG_NMD1_v1.0\FG_NMD1_v1.0\obj\Debug\netcoreapp3.1\FG_NMD1_v1.0.pdb
