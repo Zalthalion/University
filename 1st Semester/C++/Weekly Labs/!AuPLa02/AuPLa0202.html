@@ -1,0 +1,36 @@
+﻿<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>AuPLa0204</title>
+</head>
+<body>
+    
+<p>
+Programmu, kas aprēķina funkcijas f(x) vērtību y. <br>
+Funkcija f(x) uzdota ar sakarību: <br>
+ y ir 0, ja x mazāks par -2; <br>
+ y ir –x-2, ja x ir robežās no -2 līdz -1; <br> 
+ y ir x, ja x ir robežās no -1 līdz 1(neieskaitot); <br>
+ y ir –x+2, ja x ir robežās no 1 līdz 2(neieskaitot); <br>
+ y ir 0, ja x ir lielāks vai vienāds ar 2. <br>
+</p>
+    <button onclick="funkcija()">Sākt</button>
+<script>
+function funkcija(){
+var x = Number(prompt("Ievadi X!"));
+        if (x<-2) y = 0;
+        if (x >= -2 && x < -1) y = -x-2;
+        if (x >= -1 && x < 1) y = x;
+        if (x >= 1 && x < 2) y = -x+2;
+        if (x >= 2) y = 0;
+        window.alert("Y= " + y);
+}
+</script>
+    
+</body>
+</html>

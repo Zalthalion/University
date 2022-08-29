@@ -1,0 +1,33 @@
+<html>
+    <body>
+            <p> Programma kura nosaka C dalītājus intervālā [a;b] </p>         
+            <button onclick ="dalisana()"> Sākt! </button>     
+        <script>
+        function dalisana(){
+            var a = Number(prompt("Ievadi a: "));
+            if (a==0){do{
+            Alert("Ar 0 dalīt nedrīkst!!!\nIevadi lūdzu vēlreiz a: ");        
+            var a = Number(prompt("Ievadi a: "));    
+            }while (a<=0)}
+        
+            var b = Number(prompt("Ievadi b: "));
+            if (a>b){do{
+                Alert("B ir jābūt lielākam par A, Ievadi b vēlreiz: "  );
+                var b = Number(prompt("Ievadi b: "));
+            }while (a>b);}
+        
+            do{
+                var c = Number(prompt("Ievadi pozitīvu c: "));
+            }while (c<=0);
+            document.write("Skaitlis c dalās ar šādiem skaitļiem intervālā [a;b]: <br>")
+               dal = a 
+            do{
+                if (c % dal == 0) document.write(dal + "<br> ");
+                dal++
+            }while (dal < b+1);
+        
+        
+        }
+        </script>
+    </body>
+</html>

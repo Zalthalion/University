@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+
+    <meta charset="utf-8">
+    <title>AuPLa0504</title>
+
+</head>
+
+<body>
+    <p> Programma, kura salīdzina divu intervālu pirmsskaitļu daudzumu <br>
+        Tiek pieļauts, ka dati ir ievadīti korekti </p>
+        <button onclick="Start()">Sākt</button>
+
+    <script>
+        function Start(){
+//Funkcija, kura atgriež cik skaitlim ir dalītāji        
+        function vaiIrPirmsk (i)
+{
+    var dali = 1;
+    var daliSk = 0;
+    do{
+        var vd = i % dali;
+        if (vd==0) daliSk++;
+        dali++
+}while (dali <= i)
+    return daliSk
+}    
+        
+        var a = Number(prompt("Ievadi a")) //ievada 1. intervāla sākumu
+        var b = Number(prompt("Ievadi b"))  //Ievada 1. intervāla beigas
+        var c = Number(prompt("Ievadi c"))  //ievada 2. intervāla sākumu
+        var d = Number(prompt("Ievadi d"))  //ievada 2. intervāla beigas
+
+        var abint = 0
+        var cdint = 0
+        
+        //pārstaigā pirmo intervālu un uzskaita pirmsskaitļus
+        for (a; a<=b; a++){
+            var pirm = (vaiIrPirmsk(a))
+            if (pirm==2) abint++
+        }
+   //pārstaigā otro intervālu un uzskaita pirmsskaitļus
+        for (c; c<d; c++){
+            var pirm = (vaiIrPirmsk(c))
+            if (pirm==2) cdint++
+        }
+
+        if (abint > cdint)
+        window.alert("Vairāk pirmsskaitļu ir intervālā [a;b]")
+        else
+        window.alert("Vairāk pirmsskaitļu ir intervālā [c;d]")
+        }
+    </script>
+</body>
+</html>

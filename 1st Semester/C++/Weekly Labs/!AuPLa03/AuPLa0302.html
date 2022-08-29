@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <title>AuPLa0302</title>
+    </head>
+    <body>
+        <p>Programma kas izrēķina skaitļa faktoriāli</p>
+        <button onclick="Fakt()">Sākt!</button>
+        <script>function Fakt(){
+                        var Sk = Number(prompt("Ievadi skaitli:"));
+                        var Fakt = 1;
+                        var i = 1;
+                        do{
+                            Fakt = Fakt * i;
+                            i++;          
+                        }while (i<=Sk);
+                        window.alert(Fakt);}
+                </script>
+
+    </body>
+    </html>

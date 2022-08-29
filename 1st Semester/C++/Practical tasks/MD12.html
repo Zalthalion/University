@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+
+    <meta charset="utf-8">
+    <title>AuPLa0703</title>
+
+</head>
+<body>
+    <script>
+        function kapinasana(a,b){
+        if(b==0) return 1
+           var kapin = a;
+            for (var i = 1; i<b; i++)
+            kapin = kapin * a
+            return kapin
+        }
+    var a = Number(prompt("Ievadi bāzi:"))
+    var b = Number(prompt("Ievadi pakāpi"))
+    var rez = kapinasana(a,b)
+    window.alert(a + " pakāpē " + b + " ir: " + rez )
+    </script>
+</body>
+</html>

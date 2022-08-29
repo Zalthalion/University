@@ -1,0 +1,9 @@
+﻿Izveidot programmu gan C++, gan JavaScript. Ievadot loģiski nepareizus 
+datus, programmai jāizdod atbilstošs paziņojums. Jābūt iespējai 
+programmu izpildīt atkārtoti. Atrādot programmu, jāatrāda
+   a) programmas teksts,
+   b) testa piemēri,
+   c) programma darbībā.
+Precīzākas prasības sk. Laboratorijas darbu noteikumos.
+A1. Izdrukāt aritmētiskās progresijas pirmos n locekļus, ja dots a(1) 
+(pirmais loceklis) un d (diference).

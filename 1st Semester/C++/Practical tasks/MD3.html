@@ -1,0 +1,22 @@
+<html>
+    <body>
+            <p> Programma, kura no 3 ievadītajiem skaitļiem izvelk vidējo aritmētisko no nepāra skaitļiem </p>         
+            <button onclick ="avg()"> Sākt! </button>                                
+        <script>
+            function avg (){
+            var sk1 = Number(prompt("Ievadi pirmo skaitli: "));
+            var sk2 = Number(prompt("Ievadi otro skaitli: "));
+            var sk3 = Number(prompt("Ievadi trešo skaitli: "));
+            var dal = 0
+
+            if ( sk1 % 2 == 1) dal++; else sk1 = 0;
+            if ( sk2 % 2 == 1) dal++; else sk2 = 0;            
+            if ( sk3 % 2 == 1) dal++; else sk3 = 0;
+             
+            var sum = sk1+ sk2 + sk3;
+            var rez = sum / dal;
+            alert("Nepāra skaitļu vidējais aritmētiskais" + rez);  
+            }                                                     
+        </Script>
+    </body>
+</html>

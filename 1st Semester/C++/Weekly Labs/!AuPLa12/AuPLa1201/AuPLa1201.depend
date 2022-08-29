@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1542787152 source:c:\users\core i7\desktop\jf\aupla1201\aupla1201.cpp
+	<iostream>
+	"lvfriendly.h"
+	"Masivmanip.h"
+
+1542787143 source:c:\users\core i7\desktop\jf\aupla1201\masivmanip.cpp
+	<iostream>
+	"Masivmanip.h"
+
+1542785774 c:\users\core i7\desktop\jf\aupla1201\masivmanip.h
+

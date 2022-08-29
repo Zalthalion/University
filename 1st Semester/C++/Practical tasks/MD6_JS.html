@@ -1,0 +1,19 @@
+<html>
+    <body>
+            <p> Programma kura izskaita ievadītā skaitļa ciparu daudzumu </p>         
+            <button onclick ="cipari()"> Sākt! </button>     
+        <script>
+        function cipari(){
+            var ok, cip;
+            var sk = Number(prompt("Ievadi skaitli: " ));
+            var d = 0;
+            do{
+                cip = sk % 10;
+                if (cip >= 0) d++;
+                sk = Math.floor(sk/10);
+            }while (sk>0);
+            alert("Šajā skaitlī ir " + d + " cipari!")
+        }
+        </script>
+    </body>
+</html>

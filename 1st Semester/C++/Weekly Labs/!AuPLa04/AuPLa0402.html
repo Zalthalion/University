@@ -1,0 +1,19 @@
+
+<script>
+function cikVieninieku(n){
+    var palig = n;
+    var vsk = 0;
+    do
+   {
+    if (palig%10==1) vsk++;
+    palig = Math.floor(palig/10);
+   }while(palig!=0);
+
+   return vsk;
+
+}
+
+var n = Number(prompt("Ievadi naturālu skaitli",""));
+rez = cikVieninieku(n)
+alert("Vieninieku skaits = " + rez);
+</script>

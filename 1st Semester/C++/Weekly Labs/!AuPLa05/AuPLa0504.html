@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+
+    <meta charset="utf-8">
+    <title>AuPLa0504</title>
+
+</head>
+
+<body>
+<p>Programma</p>
+<button onclick="Start()">Sākt</button>
+
+<script>
+function cip_para(s){
+var psk = 0
+do{
+var cip = s % 10
+if (cip%2 == 0) psk++;
+s = Math.floor(s=s/10)
+}while (s>0);
+return psk;
+}
+
+function Start(){
+    do{
+    var s = Number(prompt("Ievadi skaitli!"))
+    if (s<0) window.alert("skaitlim ir jābūt lielākam par 0!")
+}while (s<0)
+
+var rez = cip_para(s)
+if (rez == 0) window.alert("šajā skaitlī nav pāra ciparu!")
+window.alert("Pāra ciparu skaits šajā skaitlī: " + rez)
+}
+</script>
+</body>
+</html>

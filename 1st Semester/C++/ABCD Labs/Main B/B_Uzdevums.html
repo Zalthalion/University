@@ -1,0 +1,78 @@
+<!-------------------------------------------------------------------------------
+B1. Dots naturāls skaitis n. Atrast visus tādus naturālu skaitļu pārīšus
+a un b, kuri nepārsniedz n, lai a būtu  vienāds ar visu b dalītāju summu
+(izņemot b), un b būtu vienāds ar visu a dalītāju summu (izņemot a).
+Risinājumā izmantot funkciju, kas atpazīst pirmskaitļus.
+
+Autors: Juris Freidenfelds
+Radīta 30.10.2018
+-------------------------------------------------------------------------------->
+<!doctype html>
+<html lang="lv">
+<head>
+    <meta charset="utf-8">
+    <title>B1 uzdevums</title>
+</head>
+<body>
+    <!--Informācija par programmu, kuru var izlasīt lietotājs-->
+    <p>Programma, kura atrod visus tādus naturālu skaitļu pārus a un b, kuri nepārsniedz n,  <br>
+        lai a būt vienāds ar ar visu b dalītāju summu) izņemot b), un b būtu vienāds ar visu a   <br>
+        dalītāju summu (izņemot a).</p>
+    <!--Poga, kura ļauj lietotājam nesteidzīgi izlasīt programmas uzdevumu un sākt tad, kad ir gatavs-->
+    <button onclick="parisi()">Sākt</button>
+
+    <script>
+        function parisi(){
+// Funkcija vaiIrPirmsk(i), kura nosaka vai padotais skaitlis ir pirmskaitlis
+        function vaiIrPirmsk(i){
+            var dali = 1
+            var daliSk = 0
+            do{
+                var vd = i % dali
+                if (vd == 0 ) daliSk++
+                dali++
+            }while (dali <= i)
+            return Boolean (daliSk == 2) 
+        }
+// Funkcija dalSum(n), kura izrēķina skaitļa dalītāju summa
+        function dalSum(n){
+                var summa = 0;
+            for(var i = 1; i < n; i++)
+        {
+            if(n % i == 0) summa = summa + i;
+        }
+            return summa;
+        }
+// Nodrošināta pareiza skaitļa ievade
+        do{    
+            var n = Number(prompt("Ievadiet lūdzu naturālu skaitli!"));
+            if (n<=1) window.alert("Skaitlim ir jābūt lielākam par 1!");
+        }while (n<=1);
+// Ja ievadītais skaitlis ir mazāks par 7 tad rezultāta nav
+    if (n<7) window.alert("Nav tādu pārīšu")
+//for cikls, kurš atrod a, pārbaudot vai tas nav pirmsskaitlis, un izrēķina tā dalītāju summu
+        for(var a = 1; a<n; a++){
+            if (vaiIrPirmsk(a)== true )continue // ja skaitlis ir pirmskaitlis, tad to izlaiž
+            var dalSumA = dalSum(a)
+            if (vaiIrPirmsk(dalSumA) == true)continue // ja skaitļa dalītāja summa ir pirmskaitlis, tad to izlaiž
+//for cikls, kurš atrod b, pārbaudot vai tas nav pirmsskaitlis, un izrēķina tā dalītāju summu
+        for(var b = 1; b<n; b++){
+            if (vaiIrPirmsk(b)== true )continue // ja skaitlis ir pirmskaitlis, tad to izlaiž
+            var dalSumB = dalSum(b)
+            if (vaiIrPirmsk(dalSumB) == true)continue // ja skaitļa dalītāju suuma ir pirmskaitlis, tad to izlaiž
+//Rezultātu izdruka
+            if(a==dalSumB && b==dalSumA) document.write(a + " un " +b +"<br>")}
+        } 
+        }    
+    </script>
+    
+</body>
+</html>
+<!-------------------------Testu plāns-----------------------
+Ievadītais skaitlis         gaidāmais rezultāts
+        n                           a un b
+
+        5                           Nav tādu pārīšu
+        10                          6 un 6
+        50                          28 un 28
+------------------------------------------------------------>

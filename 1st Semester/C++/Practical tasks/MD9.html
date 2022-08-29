@@ -1,0 +1,23 @@
+<!-------------------------------------
+MD9. Lietotājs ievada 20 veselus skaitļus. Noskaidrot, cik no tiem vienādi ar pēdējo ievadīto skaitli.  
+------------------------------------------>
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+
+    <meta charset="utf-8">
+    <title>MD9</title>
+
+</head>
+<body>
+    <script>
+        var arr = [19]
+        for(var i=0; i<20; i++)
+           arr.push(prompt("ievadi " + (i+1) + ". skaitli"))
+        for(var i=0; i<20; i++){
+            if(arr[i] == arr[i+1])
+            document.write(arr[i] + "<br>")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1546416217 source:c:\users\freid\onedrive\desktop\new folder (2)\aupla_d\main.cpp
+	<iostream>
+	"program.h"
+
+1546414578 c:\users\freid\onedrive\desktop\new folder (2)\aupla_d\program.cpp
+	<iostream>
+	"program.h"
+
+1546416329 c:\users\freid\onedrive\desktop\new folder (2)\aupla_d\program.h
+	<iostream>
+
+1546416237 source:c:\users\freid\onedrive\desktop\new folder (2)\aupla_d\program.cpp
+	<iostream>
+	"program.h"
+	"lvfriendly.h"
+
