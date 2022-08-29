@@ -1,0 +1,59 @@
+﻿@model IEnumerable<MD4._1.Models.Titles>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>All Titles</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Title Type
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Publish date
+            </th>
+            <th>
+                Publisher
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TitleType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pubdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pub.PubName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

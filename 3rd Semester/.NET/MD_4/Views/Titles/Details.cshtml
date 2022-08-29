@@ -1,0 +1,78 @@
+﻿@model  MD4._1.Models.Titles
+
+@{
+    ViewData["Title"] = "Details";
+    
+}
+
+<h1>Title Details</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Title:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            Title Type:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TitleType)
+        </dd>
+        <dt class="col-sm-2">
+            Price:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            Publish date:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pubdate)
+        </dd>
+        <dt class="col-sm-2">
+            Publisher:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pub.PubName)
+        </dd>
+        <dt class="col-sm-2">
+            Authors:
+        </dt>
+        <dd class="col-sm-10">
+           @*@using (MD4_DBContext db = new MD4_DBContext(MD4_DBContext.options))
+           {
+               List<Titleauthor> titleauthors = new List<Titleauthor>();
+               titleauthors = db.Titleauthor.ToList();
+
+               @foreach (var item  in titleauthors)
+               {
+                   if (Model.Id == item.TitleId)
+                   {
+                       List<Author> authors = new List<Author>();
+                       authors = db.Author.ToList();
+                       @foreach (var author in authors)
+                       {
+                           if (author.Id == item.PersonId)
+                           {
+                               <label>@author.Fname @author.Lname</label><br />
+                           }
+                       }
+                   }
+               }
+           }*@
+
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit Title</a> |
+    <a asp-controller="Titleauthors" asp-action="Edit" asp-route-id="@Model.Id">Edit Title Authors</a> |
+    
+    <a asp-action="Index">Back to List</a>
+</div>

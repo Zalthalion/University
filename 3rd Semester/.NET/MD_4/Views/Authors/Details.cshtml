@@ -1,0 +1,67 @@
+﻿@model MD4._1.Models.Author
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Author Details</h1>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            First Name: 
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fname)
+        </dd>
+        <dt class="col-sm-2">
+            Surname:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Lname)
+        </dd>
+        <dt class="col-sm-2">
+            Phone Number: 
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            Address: 
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class="col-sm-2">
+            City: 
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt class="col-sm-2">
+            State: 
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.State)
+        </dd>
+        <dt class="col-sm-2">
+            ZIP code:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Zip)
+        </dd>
+        <dt class="col-sm-2">
+            Contract: 
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Contract)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,84 @@
+﻿@model MD4._1.Models.Titleauthor
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Titleauthor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AuOrd" class="control-label"></label>
+                <input asp-for="AuOrd" class="form-control" />
+                <span asp-validation-for="AuOrd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TitleId" class="control-label"></label>
+                <select asp-for="TitleId" class="form-control" asp-items="ViewBag.TitleId"></select>
+                <span asp-validation-for="TitleId" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="PersonId" class="control-label"></label>
+                <select asp-for="PersonId" class="form-control" asp-items="ViewBag.PersonId"></select>
+                <span asp-validation-for="PersonId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AuOrd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.AuOrd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Person.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title.Title)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
