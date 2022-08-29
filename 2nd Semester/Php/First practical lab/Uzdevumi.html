@@ -1,0 +1,89 @@
+<style>
+
+li{
+  margin: 20px 0;
+}
+
+</style>
+
+<body style="font-size:18px;">
+
+<h1 align="center"> LAB I (Feb 25 and Feb 27, 2018): Basic Usage of PHP </h1>
+
+<hr>
+
+<h2>PART 1: TEST YOUR LOCAL WEB SERVER</h2>
+
+<ol style="font-size:20px;font-family:verdana;">
+	<li> Start WampServer </li>
+	<li> Check WampServer icon on the right -- it is ready when it is green.
+		<br><br>If it is not green, Left-Click -> Restart All Services.</li>
+	<li> Left-Click, see Apache, PHP, and MySQL menus.  
+	<li> Left-Click -> www directory: This is the directory where we put our PHP or HTML files.
+		<br><br> Create a directory with your name and put your PHP files there during the lab.
+		<br><br> Keep open this directory during the lab.
+	<li> Left-Click -> Localhost: This is how we can access our local server, usually http://localhost/. 
+		<br><br> You should see the main page: "index.php" under the "www directory".
+		<br><br> Please never delete or modify "index.php" under the "www directory".
+		<br><br> Please use the directory with your name for your work.
+	<li> http://localhost/: There are certain tools you may use. We will use them in the upcoming labs.
+	<li> Go to your directory with your name. Create a PHP file named "first.php"
+	<li> Edit "first.php" (notepad, notepad++, eclipse, or your favorite editor).
+<pre>
+&lt;?php
+echo "hello world";
+?>
+</pre>
+	<li> Call your file from the server by entering the address bar of your browser: http://localhost/your_name/first.php
+	<br><br>
+	This is how we create, edit, and then test our php files.
+</ol>
+
+<hr>
+
+<h2>PART 2: PHP BASICS</h2>
+<ol style="font-size:20px;font-family:verdana;">
+	<li> Create a new PHP file under the directory with your name.
+	<li> Print the following pattern on the screen with PHP by using loop(s).
+		<br><br><div id="stars"></div>
+		<script> str = "*"; for (i=0;i<10;i++) { document.getElementById("stars").innerHTML+=str+"<br>"; str+="*"; } </script>
+	<li> Write a PHP function that takes a natural number, say N, as the input and then returns the summation of the first N natural numbers.
+		<br><br> Test your function with some natural numbers. E.g., pick N as 50, and then print the summation on the screen.
+	<li> Print the following pattern on the screen with PHP. 
+	`	<br>Please use a loop to print the lines and use your function in the previous item.
+		<br><br><div id="sum"></div>
+		<script> for (i=10;i<41;i=i+3) {sum = 0; for (j=1;j<=i;j++) sum += j; 
+		document.getElementById("sum").innerHTML+="The summation of the first "+i+" natural numbers is "+sum+".<br>";} </script>
+</ol>
+
+<hr>
+
+<h2>PART 3: FORMS</h2>
+<ol style="font-size:20px;font-family:verdana;">
+	<li> Create a new HTML file under the directory with your name.
+	<li> Create the following form in your HTML page. You can use POST or GET method.
+		<br><br>
+		<form action="/action.php" method="post">
+		First Number:<br>
+		<input type="text" name="firstnumber" value="0"><br>
+		Second Number:<br>
+		<input type="text" name="secondnumber" value="10"><br><br>
+		<input type="submit" value="Submit">
+		</form>
+	<li> When clicking submit button, both values should be submitted to a PHP file, say "action.php".
+	<li> Create the PHP file "action.php", read both numbers, and parse them as integers.
+	<li> Print the summation of all natural numbers between these two natural numbers in "action.php".
+	<li> Test your program with different inputs.
+</ol>
+
+<hr>
+
+<h2>PART 4: A SIMPLE PROGRAM</h2>
+<ol style="font-size:20px;font-family:verdana;">
+	<li> Similar to the above form example, write a PHP program (as a single PHP file or as one HTML and one PHP file).
+	<li> Your program takes a natural number from the user.
+	<li> Your program prints whether this number is prime or not.
+	<li> Test your program with different inputs.
+</ol>
+
+<br><br><br><br><br>

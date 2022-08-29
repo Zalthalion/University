@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Courgette|Dancing+Script|Lobster');html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background: url('Juris-Freidedenfelds-12.jpg');
+    background-size: cover;
+}
+body{
+    background: none;
+}
+ .wrap{
+     max-width:700px;
+     height:80%;
+     border-radius: 20px;
+     margin:auto;
+     background:rgba(0,0,0,0.8);
+     box-sizing: border-box;
+     padding: 30px;
+     color: #fff;
+     margin-top:30px;
+
+ }
+ h1{
+     text-align: center;
+ }
+
+ input[type=text]{
+    
+     text-align: center;
+     width:100%;
+     box-sizing: border-box;
+     padding: 12px 5px;
+     background: rgba(0,0,0,0.10);
+     outline:none;
+     border:none;
+     border-bottom: 1px solid #fff;
+     border-radius: 5px;
+     margin:5px;
+     font-weight: bold;
+     color:rgba(255,255,255,0.60)
+    }
+
+ input[type=submit]{
+    width:100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #60adde;
+    opacity:0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+
+ }
+ input[type=submit]:hover{
+     background: #003366;
+     opacity: 0.7;
+ }
+
+ div.navbar{
+    margin: 0;
+}
+ul.navbar {
+   list-style-type: none;
+   margin: 0 10% 0 10%;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   width: 80%;
+   position: fixed;
+   z-index: 4;
+   margin-top: -50px;
+ }
+ 
+ li#navbar {
+   float: left;
+ }
+ 
+ li#navbar a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 18px 16px 15px 20px;
+   text-decoration: none;
+ }
+ 
+ li#navbar a:hover:not(.active) {
+   background-color: #111;
+ }
+ 
+ .active {
+   background-color: #396888;
+ }
+
+
+
+ div.teksts p{
+    text-align: center;
+    display: inline;
+    line-height:2em;
+    font-size: 1.22em;
+    word-spacing: -1px;
+    font-weight: 200; 
+    overflow: hidden;
+ }
+ div.teksts{
+     font-family:'Cardo';
+     text-align: center;
+    padding:5px 15px 5px 15px;
+    margin-top: 8%;
+    border: solid #fff 1px;
+    border-radius:4px;
+    background-color: rgba(255,255,255,0.10);
+ }
+ h1{
+    font-family:'Dancing Script';
+    font-weight: 400;
+    font-size:4em;
+    margin-top: 3%;
+ }

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Courgette|Dancing+Script|Lobster');html{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    
+    background-repeat: no-repeat;
+    background: url('Juris-Freidedenfelds-12.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ .wrap{
+     text-align: center;
+     max-width:700px;
+     height:500px;
+     border-radius: 20px;
+     margin:auto;
+     background:rgba(0,0,0,0.8);
+     box-sizing: border-box;
+     padding: 30px;
+     color: #fff;
+     margin-top:30px;
+
+ }
+
+ div.navbar{
+    margin: 0;
+}
+ul.navbar {
+   list-style-type: none;
+   margin: 0 10% 0 10%;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   width: 80%;
+   position: fixed;
+   z-index: 4;
+   margin-top: -50px;
+ }
+ 
+ li#navbar {
+   float: left;
+ }
+ 
+ li#navbar a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 18px 16px 15px 20px;
+   text-decoration: none;
+ }
+ 
+ li#navbar a:hover:not(.active) {
+   background-color: #111;
+ }
+ 
+ .active {
+   background-color: #396888;
+ }
+
+
+ h1{
+    font-family:'Dancing Script';
+    font-weight: 400;
+    font-size:4em;
+    margin-top: 1%;
+ }
+div.box{
+    min-width: 150px;
+    margin: 0 auto 0 auto;
+    width:30%;
+    overflow: hidden;
+    height: 130px;
+}
+div.iconL{
+    display: block;
+    float:left;
+    width:49%;
+
+}
+div.iconR{
+    display: block;
+    float:right;
+    width:49%;
+}
+ img{padding:5px;
+    min-width:80px;
+     width: 10%;    
+ }

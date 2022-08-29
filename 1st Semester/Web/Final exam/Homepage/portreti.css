@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Courgette|Dancing+Script|Lobster');
+    body{
+        background: url('background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.gallery-block{
+  margin-top:3.5%;
+  padding-bottom: 60px;
+}
+
+.gallery-block .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.compact-gallery .item{
+  
+    overflow: hidden;
+  margin-bottom: 0;
+  border: solid white 3px;
+  opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image{
+  transition: 0.8s ease;
+  
+}
+
+@media (min-width: 576px) {
+
+  .gallery-block.compact-gallery .item .description {
+    opacity: 0; 
+  }
+
+  .gallery-block.compact-gallery .item a:hover .description {
+    opacity: 1; 
+  } 
+
+  .gallery-block .zoom-on-hover:hover .image {
+    transform: scale(1.3);
+    opacity: 0.7; 
+  }
+}
+h1{
+    text-align: center;
+    margin: 0% 0 -3% 0;
+    font-family: 'Dancing Script';
+    color: rgba(255,255,255,0.8);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size:5em;
+}
+
+footer p{
+  color: #fff;
+  margin: 0 auto 10px auto;
+  font-family: 'Cardo';
+}
+footer{
+  margin-top:-40px;
+  border-top:solid 1px rgba(255,255,255,0.8);
+}
+
+li.footer{
+
+  float:left;
+  list-style-type: none;
+  padding: 8px;
+}
+
+ul.footer{
+  height:50px;
+  margin-left:25%;
+  margin-right:25%;
+  min-width:100px;  
+}
+
+footer a:hover{
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+

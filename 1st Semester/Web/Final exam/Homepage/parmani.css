@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Courgette|Dancing+Script|Lobster');html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background: url('Juris-Freidedenfelds-12.jpg');
+    background-size: cover;
+    background-position: center;
+}
+body{
+    background: none;
+}
+ .wrap{
+     min-height: 600px;
+     text-align: justify;
+     max-width:1700px;
+     height:100%;
+     border-radius: 20px;
+     margin:auto;
+     background:rgba(0,0,0,0.8);
+     box-sizing: border-box;
+     padding: 30px;
+     color: #fff;
+     margin-top:30px;
+
+ }
+
+ div.navbar{
+    margin: 0;
+}
+ul.navbar {
+   list-style-type: none;
+   margin: 0 10% 0 10%;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   width: 80%;
+   position: fixed;
+   z-index: 4;
+   margin-top: -50px;
+ }
+ 
+ li#navbar {
+   float: left;
+ }
+ 
+ li#navbar a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 18px 16px 15px 20px;
+   text-decoration: none;
+ }
+ 
+ li#navbar a:hover:not(.active) {
+   background-color: #111;
+ }
+ 
+ .active {
+   background-color: #396888;
+ }
+
+
+ h1{
+    font-family:'Dancing Script';
+    font-weight: 400;
+    font-size:4em;
+    margin-top: 1%;
+ }
+
+ div.teksts{
+     display: inline-block;
+     line-height: 1em;
+ }
+ div.bilde img{
+width:25%;
+float: left;
+min-width:300px;
+border:solid white 4px;
+ }
+
+div.teksts p{
+    margin:10px;
+    font-family: 'Cardo';
+    font-size: 1.2em;
+}
+div.teksts ol li{
+    font-family: 'Cardo';
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+

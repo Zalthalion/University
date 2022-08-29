@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="vievport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Pieteikšanās</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="piesakiescss.css">
+    </head>
+    <body>  
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                    <a class="navbar-brand" >Piesakies</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link" href="parmani.html">Par mani</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="kontakti.html">Kontakti</a>
+                        <li class="nav-item">
+                        <a class="nav-link" href="pieteiksanas.html">Pieteikšanās</a>
+                      </ul>
+                    </div>
+                  </nav>
+       <div class="wrap">
+        <h1>Piesakies!</h1>
+        <div class="teksts"><p>Paldies, ka apmeklējāt manu lapu. <br>
+                Ja esat apsvēruši, ka es varētu būt tas cilvēks, kas iemūžinās fotogrāfijās Jūsu īpašākos mirkļus, tad sazinaties ar mani aizpildot zemāk 
+                esošo formu. <br>Atbildi saņemsiet 24 stundu laikā.</p></div>
+            <div class="forma"><form name="myForm" onsubmit="return validateForm()" action="http://naivist.net/form" target="_blank" method="get">
+                    <input type="text" placeholder="Vārds.." name="fname" id="vards">
+                    <input type="text" placeholder="Uzvārds.." name="sname" id="uzvards">
+                    <input type="text" placeholder="E-pasts.." name="mail" id="pasts">
+                    <input type="text" placeholder="Telefona Nr.." name="phone" id="numurs" onchange="return vaiTelOk()">
+            
+                    <input id="datepicker" onchange="checkDate()"  class="datepicker-input" type="text" data-date-format="dd-mm-yyyy" placeholder="Datums (dd/mm/yyyy )..">
+
+                    <input type="text" placeholder="Pasākuma vieta.." name="place">
+                    <input type="submit" value="Iesniegt" >
+            </form>
+        </div>
+        </div>
+        <script src="pieteiksanas.js"></script>
+
+</body>
+</html>
