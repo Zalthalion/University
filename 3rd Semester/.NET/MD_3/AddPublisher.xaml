@@ -1,0 +1,20 @@
+﻿<Window x:Class="MD_3.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD_3"
+        mc:Ignorable="d"
+        Title="Create a Publisher" Height="363.989" Width="305.125">
+    <Grid>
+        <TextBox x:Name="PublisherName" HorizontalAlignment="Left" Height="54" Margin="27,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <TextBox x:Name="PublisherCity" HorizontalAlignment="Left" Height="54" Margin="27,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <TextBox x:Name="PublisherCountry" HorizontalAlignment="Left" Height="54" Margin="27,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="CreatePublisher" Content="Create a Publisher" HorizontalAlignment="Left" Height="38" Margin="60,277,0,0" VerticalAlignment="Top" Width="162" Click="CreatePublisher_Click"/>
+        <Label Content="Publisher Name" HorizontalAlignment="Left" Height="24" Margin="27,20,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Publisher City" HorizontalAlignment="Left" Height="24" Margin="27,98,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Publisher Country" HorizontalAlignment="Left" Height="24" Margin="27,176,0,0" VerticalAlignment="Top" Width="129"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+Ai Bj Ck Ko
+a b c
+Ai
+Ck
+Ai a Ai
+Ai a Ko
+Ai Bj
+Bj Ko
+Bj b Bj
+Bj Ck
+Ck c Ck

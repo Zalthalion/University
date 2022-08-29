@@ -1,0 +1,7 @@
+C:\Users\freid\OneDrive\Documents\Code\C#\Automātu teorija NMD2\bin\Debug\Automātu teorija NMD2.exe.config
+C:\Users\freid\OneDrive\Documents\Code\C#\Automātu teorija NMD2\bin\Debug\Automātu teorija NMD2.exe
+C:\Users\freid\OneDrive\Documents\Code\C#\Automātu teorija NMD2\bin\Debug\Automātu teorija NMD2.pdb
+C:\Users\freid\OneDrive\Documents\Code\C#\Automātu teorija NMD2\obj\Debug\Automātu teorija NMD2.csprojAssemblyReference.cache
+C:\Users\freid\OneDrive\Documents\Code\C#\Automātu teorija NMD2\obj\Debug\Automātu teorija NMD2.csproj.CoreCompileInputs.cache
+C:\Users\freid\OneDrive\Documents\Code\C#\Automātu teorija NMD2\obj\Debug\Automātu teorija NMD2.exe
+C:\Users\freid\OneDrive\Documents\Code\C#\Automātu teorija NMD2\obj\Debug\Automātu teorija NMD2.pdb

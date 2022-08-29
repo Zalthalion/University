@@ -1,0 +1,16 @@
+﻿<Window x:Class="MD_2.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD_2"
+        mc:Ignorable="d"
+        Title="Window3" Height="161.853" Width="255.586">
+    <Grid>
+        <Label Content="Publisher name" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="PubName" HorizontalAlignment="Left" Height="52" Margin="14,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220"/>
+        <Button x:Name="Add_Publisher" Content="Add Publisher" HorizontalAlignment="Left" Margin="74,90,0,0" VerticalAlignment="Top" Width="106" Click="Add_Publisher_Click"/>
+        
+
+    </Grid>
+</Window>

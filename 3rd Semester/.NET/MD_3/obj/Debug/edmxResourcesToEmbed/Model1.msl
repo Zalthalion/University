@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dotNet_md3ModelStoreContainer" CdmEntityContainer="dotNet_md3Entities">
+    <EntitySetMapping Name="authors">
+      <EntityTypeMapping TypeName="dotNet_md3Model.author">
+        <MappingFragment StoreEntitySet="author">
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="zip" ColumnName="zip" />
+          <ScalarProperty Name="contract" ColumnName="contract" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="publishers">
+      <EntityTypeMapping TypeName="dotNet_md3Model.publisher">
+        <MappingFragment StoreEntitySet="publishers">
+          <ScalarProperty Name="pub_name" ColumnName="pub_name" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="titleauthors">
+      <EntityTypeMapping TypeName="dotNet_md3Model.titleauthor">
+        <MappingFragment StoreEntitySet="titleauthor">
+          <ScalarProperty Name="au_ord" ColumnName="au_ord" />
+          <ScalarProperty Name="titleID" ColumnName="titleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="personId" ColumnName="personId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="titles">
+      <EntityTypeMapping TypeName="dotNet_md3Model.title">
+        <MappingFragment StoreEntitySet="titles">
+          <ScalarProperty Name="title1" ColumnName="title" />
+          <ScalarProperty Name="titleType" ColumnName="titleType" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="pubdate" ColumnName="pubdate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="pubID" ColumnName="pubID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

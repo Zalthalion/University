@@ -1,0 +1,50 @@
+﻿<Window x:Class="MD_3.UpdateTitle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD_3"
+        mc:Ignorable="d"
+        Title="Update Title" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TitleTitle" HorizontalAlignment="Left" Height="47" Margin="23,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238"/>
+        <ComboBox x:Name="TitleType" HorizontalAlignment="Left" Height="30" Margin="23,100,0,0" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="TitlePrice" HorizontalAlignment="Left" Height="47" Margin="291,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213"/>
+        <DatePicker x:Name="TitlePublishDate" HorizontalAlignment="Left" Height="30" Margin="291,100,0,0" VerticalAlignment="Top" Width="213"/>
+        <ComboBox x:Name="TitlePublisher" HorizontalAlignment="Left" VerticalAlignment="Top" Width="238" Margin="529,29,0,0" Height="47"/>
+        <DataGrid x:Name="AllAuthors" HorizontalAlignment="Left" Height="228" Margin="23,165,0,0" VerticalAlignment="Top" Width="238" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="40" Header="ID" Binding="{Binding ID}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="First name" Binding="{Binding fname}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Last name" Binding="{Binding lname}"></DataGridTextColumn>
+
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <DataGrid x:Name="TitleAuthors" HorizontalAlignment="Left" Height="228" Margin="529,165,0,0" VerticalAlignment="Top" Width="238" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="40" Header="ID" Binding="{Binding ID}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="First name" Binding="{Binding fname}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Last name" Binding="{Binding lname}"></DataGridTextColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="AddAuthor" Content="Add Author" HorizontalAlignment="Left" Height="44" Margin="291,165,0,0" VerticalAlignment="Top" Width="213" Click="AddAuthor_Click" />
+        <Button x:Name="RemoveAuthor" Content="Remove Author" HorizontalAlignment="Left" Height="44" Margin="291,226,0,0" VerticalAlignment="Top" Width="213" Click="RemoveAuthor_Click" />
+        <Button x:Name="NewAuthor" Content="New Author" HorizontalAlignment="Left" Height="44" Margin="291,288,0,0" VerticalAlignment="Top" Width="213" Click="NewAuthor_Click" />
+        <Button x:Name="SaveChanges" Content="Save Changes" HorizontalAlignment="Left" Height="44" Margin="291,349,0,0" VerticalAlignment="Top" Width="213" Click="SaveChanges_Click" />
+        <Label Content="Title Name" HorizontalAlignment="Left" Height="24" Margin="23,5,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Title Type" HorizontalAlignment="Left" Height="24" Margin="23,76,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Title Price" HorizontalAlignment="Left" Height="24" Margin="291,5,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Title Publisher" HorizontalAlignment="Left" Height="24" Margin="529,5,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Title Publishing date" HorizontalAlignment="Left" Height="24" Margin="291,76,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="All Authors" HorizontalAlignment="Left" Height="24" Margin="23,141,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Title Authors" HorizontalAlignment="Left" Height="24" Margin="529,141,0,0" VerticalAlignment="Top" Width="129"/>
+
+
+
+    </Grid>
+</Window>

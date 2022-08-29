@@ -1,0 +1,60 @@
+﻿<Window x:Class="MD_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD_3"
+        mc:Ignorable="d"
+        Title="Main Window" Height="637.442" Width="1364.104">
+    <Grid Margin="0,0,0,-21">
+
+        <DataGrid x:Name="Titles" HorizontalAlignment="Left" Height="128" VerticalAlignment="Top" Width="1185" Margin="79,51,0,0" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="Title" Binding="{Binding title}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Title Type" Binding="{Binding titleType}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Publish Date" Binding="{Binding pubdate}"></DataGridTextColumn>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="Authors" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="1185" Margin="79,228,0,0" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="First name" Binding="{Binding fname}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Last name" Binding="{Binding lname}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Phone number" Binding="{Binding phone}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Adress" Binding="{Binding address}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="City" Binding="{Binding city}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="State" Binding="{Binding state}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Zip" Binding="{Binding zip}"></DataGridTextColumn>
+                <DataGridCheckBoxColumn Width="*" Header="Contract" Binding="{Binding contract}"></DataGridCheckBoxColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add new Author" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="864,202,0,0" Click="Button_Click"/>
+        <Button x:Name="DeleteAuthor" Content="Delete author" HorizontalAlignment="Left" Height="20" Margin="1144,202,0,0" VerticalAlignment="Top" Width="120" Click="DeleteAuthor_Click"/>
+
+        <DataGrid x:Name="Publishers" HorizontalAlignment="Left" Height="128" VerticalAlignment="Top" Width="1185" Margin="79,434,0,0" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="Name" Binding="{Binding pub_name}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="City" Binding="{Binding city}"></DataGridTextColumn>
+                <DataGridTextColumn Width="*" Header="Country" Binding="{Binding country}"></DataGridTextColumn>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="NewTitle" Content="Add new title" HorizontalAlignment="Left" Height="20" Margin="864,25,0,0" VerticalAlignment="Top" Width="120" Click="NewTitle_Click"/>
+        <Button x:Name="DeleteTitle" Content="Delete title" HorizontalAlignment="Left" Height="20" Margin="1144,25,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="4.074,-0.621" Click="DeleteTitle_Click"/>
+        <Button x:Name="CreatePublisher" Content="Add new Publisher" HorizontalAlignment="Left" Height="20" Margin="864,408,0,0" VerticalAlignment="Top" Width="120" Click="CreatePublisher_Click"/>
+        <Button x:Name="DeletePublisher" Content="Delete Publisher" HorizontalAlignment="Left" Height="20" Margin="1144,408,0,0" VerticalAlignment="Top" Width="120" Click="DeletePublisher_Click"/>
+        <Button x:Name="UpdatePublisher" Content="Update Publisher" HorizontalAlignment="Left" Height="20" Margin="1007,408,0,0" VerticalAlignment="Top" Width="111" Click="UpdatePublisher_Click"/>
+        <Button x:Name="UpdateAuthor" Content="Update Author" HorizontalAlignment="Left" Height="20" Margin="1007,202,0,0" VerticalAlignment="Top" Width="111" Click="UpdateAuthor_Click"/>
+        <Button x:Name="UpdateTitle" Content="Update Title" HorizontalAlignment="Left" Height="20" Margin="1007,25,0,0" VerticalAlignment="Top" Width="111" Click="UpdateTitle_Click"/>
+        <Button x:Name="MoreDetails" Content="More Details" HorizontalAlignment="Left" Height="20" Margin="722,25,0,0" VerticalAlignment="Top" Width="120" Click="MoreDetails_Click"/>
+        <Label Content="All Authors" HorizontalAlignment="Left" Height="26" Margin="79,202,0,0" VerticalAlignment="Top" Width="135"/>
+        <Label Content="All Titles" HorizontalAlignment="Left" Height="26" Margin="79,25,0,0" VerticalAlignment="Top" Width="135"/>
+        <Label Content="All Publishers" HorizontalAlignment="Left" Height="26" Margin="79,408,0,0" VerticalAlignment="Top" Width="135"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="MD_2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD_2"
+        mc:Ignorable="d"
+        Title="Create an Author" Height="524.305" Width="345.095">
+    <Grid>
+        <Label Content="Author Name" HorizontalAlignment="Left" Height="28" Margin="56,28,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="Author Surname" HorizontalAlignment="Left" Height="28" Margin="52,93,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="Author Adress" HorizontalAlignment="Left" Height="28" Margin="52,158,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="Author City" HorizontalAlignment="Left" Height="28" Margin="52,228,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="Author Country" HorizontalAlignment="Left" Height="28" Margin="52,296,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="Author State" HorizontalAlignment="Left" Height="28" Margin="56,361,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="Author Zip" HorizontalAlignment="Left" Height="28" Margin="176,361,0,0" VerticalAlignment="Top" Width="128"/>
+
+        <TextBox x:Name="AutName" HorizontalAlignment="Left" Height="47" Margin="56,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="AutSurname" HorizontalAlignment="Left" Height="49" Margin="56,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="AutAdress" HorizontalAlignment="Left" Height="48" Margin="56,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="AutCity" HorizontalAlignment="Left" Height="48" Margin="56,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="AutCountry" HorizontalAlignment="Left" Height="40" Margin="56,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="AutState" HorizontalAlignment="Left" Height="44" Margin="56,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="AutZip" HorizontalAlignment="Left" Height="44" Margin="176,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+
+
+        <Button x:Name="SaveAuthor" Content="Add Author" HorizontalAlignment="Left" Margin="56,450,0,0" VerticalAlignment="Top" Width="238" Click="AddAuthor_Click"/>
+        
+    </Grid>
+</Window>

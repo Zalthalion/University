@@ -1,0 +1,26 @@
+﻿<Window x:Class="MD_2.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD_2"
+        mc:Ignorable="d"
+        Title="Window5" Height="450" Width="229.577">
+    <Grid>
+        <Label Content="Name" HorizontalAlignment="Left" Height="25" Margin="27,10,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Surname" HorizontalAlignment="Left" Height="24" Margin="28,87,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Hire Date" HorizontalAlignment="Left" Height="26" Margin="28,152,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Publisher" HorizontalAlignment="Left" Height="24" Margin="28,218,0,0" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="EmpName" HorizontalAlignment="Left" Height="47" Margin="27,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163"/>
+        <TextBox x:Name="EmpSurname" HorizontalAlignment="Left" Height="41" Margin="29,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163"/>
+        <DatePicker x:Name="EmpHireDate" HorizontalAlignment="Left" Height="46" Margin="29,172,0,0" VerticalAlignment="Top" Width="163"/>
+        
+        <ComboBox x:Name="Publishers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="162" Margin="28,242,0,0" SelectionChanged="Publishers_SelectionChanged_1">
+           
+        </ComboBox>
+        
+        <Button x:Name="SaveEmployee" Content="Update Employee" HorizontalAlignment="Left" Height="32" Margin="29,365,0,0" VerticalAlignment="Top" Width="163" Click="SaveEmployee_Click"/>
+
+
+    </Grid>
+</Window>

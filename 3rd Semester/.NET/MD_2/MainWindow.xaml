@@ -1,0 +1,44 @@
+﻿<Window x:Class="MD_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="866.068" Width="1043.349">
+    <Grid>
+
+        <Button x:Name="readFromFile" Content="Read from file" HorizontalAlignment="Left" Height="30" Margin="26,18,0,0" VerticalAlignment="Top" Width="300" Click="ReadFromFile_Click"/>
+        <Button x:Name="saveToFile" Content="Save to file" HorizontalAlignment="Left" Height="30" Margin="701,18,0,0" VerticalAlignment="Top" Width="300" Click="SaveToFile_Click"/>
+        <Button x:Name="createTestData" Content="Test data" HorizontalAlignment="Left" Height="30" Margin="370,18,0,0" VerticalAlignment="Top" Width="300" Click="CreateTestData_Click"/>
+
+        <ListBox x:Name="formTitles" HorizontalAlignment="Left" Height="140" Margin="26,87,0,0" VerticalAlignment="Top" Width="824" SelectedIndex="3"></ListBox>
+
+        <Button x:Name="newTitle" Content="New Title" HorizontalAlignment="Left" Height="20" Margin="871,127,0,0" VerticalAlignment="Top" Width="130" Click="NewTitle_Click"/>
+        <Button x:Name="EditTitle" Content="Edit Title" HorizontalAlignment="Left" Height="20" Margin="871,167,0,0" VerticalAlignment="Top" Width="130" Click="EditTitle_Click"/>
+        <Button x:Name="DelTitle" Content="Delete Title" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="130" Margin="871,207,0,0" Click="DelTitle_Click"/>
+
+        <ListBox x:Name="formAuthors" HorizontalAlignment="Left" Height="140" Margin="26,279,0,0" VerticalAlignment="Top" Width="824"></ListBox>
+        
+        <Button x:Name="newAuthor" Content="New Author" HorizontalAlignment="Left" Height="20" Margin="871,319,0,0" VerticalAlignment="Top" Width="130" Click="NewAuthor_Click"/>
+        <Button x:Name="EditAuthor" Content="Edit Author" HorizontalAlignment="Left" Height="20" Margin="871,359,0,0" VerticalAlignment="Top" Width="130" Click="EditAuthor_Click"/>
+        <Button x:Name="DelAuthor" Content="Delete Author" HorizontalAlignment="Left" Height="23" Margin="871,396,0,0" VerticalAlignment="Top" Width="130" Click="DelAuthor_Click"/>
+
+        <ListBox x:Name="formEmployees" HorizontalAlignment="Left" Height="132" Margin="26,471,0,0" VerticalAlignment="Top" Width="824"></ListBox>
+
+        <Button x:Name="newEmp" HorizontalAlignment="Left" Height="20" Margin="871,508,0,0" VerticalAlignment="Top" Width="130" Click="NewEmp_Click" Content="New Employee"/>
+        <Button x:Name="EditEmployee" Content="Edit Employee" HorizontalAlignment="Left" Height="20" Margin="871,546,0,0" VerticalAlignment="Top" Width="130" Click="EditEmployee_Click"/>
+        <Button x:Name="DelEmployee" Content="Delete Employee" HorizontalAlignment="Left" Margin="871,583,0,0" VerticalAlignment="Top" Width="130" Click="DelEmployee_Click"/>
+
+        <ListBox x:Name="formPublisher" HorizontalAlignment="Left" Height="132" Margin="26,655,0,0" VerticalAlignment="Top" Width="824"></ListBox>
+
+        <Button x:Name="newPubl" Content="New Publisher" HorizontalAlignment="Left" Height="20" Margin="871,693,0,0" VerticalAlignment="Top" Width="130" Click="NewPubl_Click"/>
+        <Button x:Name="EditButton" Content="Edit Publisher" HorizontalAlignment="Left" Margin="871,730,0,0" VerticalAlignment="Top" Width="130" Click="EditButton_Click"/>
+        <Button x:Name="DelPublisher" Content="Delete Publisher" HorizontalAlignment="Left" Height="20" Margin="871,767,0,0" VerticalAlignment="Top" Width="130" Click="DelPublisher_Click"/>
+        
+        <Label Content="Titles" HorizontalAlignment="Left" Height="29" Margin="26,62,0,0" VerticalAlignment="Top" Width="139"/>
+        <Label Content="Authors" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,253,0,0"/>
+        <Label Content="Employees" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,445,0,0"/>
+        <Label Content="Publishers" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,629,0,0"/>
+    </Grid>
+</Window>

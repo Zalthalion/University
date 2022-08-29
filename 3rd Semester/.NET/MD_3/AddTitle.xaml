@@ -1,0 +1,25 @@
+﻿<Window x:Class="MD_3.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD_3"
+        mc:Ignorable="d"
+        Title="Create a Title" Height="203.065" Width="792.614">
+    <Grid Margin="-4,0,2,-21">
+        <TextBox x:Name="TitleTitle" HorizontalAlignment="Left" Height="47" Margin="23,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238"/>
+        <ComboBox x:Name="TitleType" HorizontalAlignment="Left" Height="46" Margin="23,100,0,0" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="TitlePrice" HorizontalAlignment="Left" Height="47" Margin="291,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213"/>
+        <DatePicker x:Name="TitlePublishDate" HorizontalAlignment="Left" Height="46" Margin="291,100,0,0" VerticalAlignment="Top" Width="213"/>
+        <ComboBox x:Name="TitlePublisher" HorizontalAlignment="Left" VerticalAlignment="Top" Width="238" Margin="529,29,0,0" Height="47"/>
+        
+        <Button x:Name="AddAuthors" Content="Add authors to Title" HorizontalAlignment="Left" Height="43" Margin="532,103,0,0" VerticalAlignment="Top" Width="235" Click="AddAuthorsToTitle_click" />
+        <Label Content="Title Name" HorizontalAlignment="Left" Height="24" Margin="23,5,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Title Type" HorizontalAlignment="Left" Height="24" Margin="23,76,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Title Price" HorizontalAlignment="Left" Height="24" Margin="291,5,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Title Publisher" HorizontalAlignment="Left" Height="24" Margin="529,5,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Title Publishing date" HorizontalAlignment="Left" Height="24" Margin="291,76,0,0" VerticalAlignment="Top" Width="129"/>
+
+
+    </Grid>
+</Window>

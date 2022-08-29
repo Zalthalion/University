@@ -1,0 +1,12 @@
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\MD_1.csprojAssemblyReference.cache
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\MD_1.csproj.CoreCompileInputs.cache
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\bin\Debug\MD_1.exe.config
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\bin\Debug\MD_1.exe
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\bin\Debug\MD_1.pdb
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\MD_1.exe
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\MD_1.pdb
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\UserControl1.g.cs
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\MD_1_MarkupCompile.cache
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\MD_1_MarkupCompile.lref
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\UserControl1.baml
+C:\Users\freid\OneDrive\Documents\Code\C#\MD_1\obj\Debug\MD_1.g.resources
